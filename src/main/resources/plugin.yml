@@ -1,0 +1,4 @@
+name: DebugPermissions
+main: nl.thijsmolendijk.debugpermissions.DebugPermissions
+version: 0.0.1
+author: molenzwiebel

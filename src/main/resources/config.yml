@@ -1,0 +1,19 @@
+# Permissions that are ignored (not logged). 
+# Useful when you have permissions for stuff like block breaking and you don't want to spam the console
+ignoredPermissions:
+- bukkit.*
+- worldedit.*
+
+# The permission a user needs to have before the plugin starts logging. 
+# This is to prevent spam, by only logging hasPermission calls from you (or a test person)
+permission: debugpermissions.debug
+
+# The type of log. This can be either console or file
+# Console: All the hasPermission calls will be logged to the console, in the format:
+#   Call to hasPermission, <permission>, returned <true/false> for player <player_name>
+# File: Logs all the hasPermission calls to a file, calls.log, in the format:
+#   <DATE>: Call to hasPermission, <permission>, returned <true/false> for player <player_name>
+logType: console
+
+# When set to false, DebugPermissions only logs when the hasPermission call returned false
+logWhenTrue: true
